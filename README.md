@@ -1,4 +1,4 @@
-# astrbot_plugin_textadventure
+# astrbot_plugin_maoxian
 支持暂停恢复的动态文字冒险游戏插件，让玩家享受AI驱动的沉浸式冒险体验
 
 # 文字冒险游戏 AstrBot 插件
