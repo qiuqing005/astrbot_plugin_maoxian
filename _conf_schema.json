@@ -1,0 +1,38 @@
+{
+  "default_adventure_theme": {
+    "description": "默认冒险主题",
+    "type": "string",
+    "default": "奇幻世界",
+    "hint": "当用户不指定主题时使用的默认主题"
+  },
+  "session_timeout": {
+    "description": "会话超时时间（秒）",
+    "type": "int",
+    "default": 300,
+    "hint": "玩家在游戏中的最大空闲时间，超时后游戏自动暂停"
+  },
+  "max_cache_days": {
+    "description": "缓存保留天数",
+    "type": "int",
+    "default": 7,
+    "hint": "游戏缓存文件的最大保留天数，超过此时间的缓存将被自动清理"
+  },
+  "auto_save_interval": {
+    "description": "自动保存间隔（秒）",
+    "type": "int",
+    "default": 60,
+    "hint": "游戏状态自动保存到文件的时间间隔"
+  },
+  "system_prompt_template": {
+    "description": "系统提示词模板",
+    "type": "text",
+    "default": "你是一位经验丰富的文字冒险游戏主持人(Game Master)。你将在一个'{game_theme}'主题下，根据玩家的行动实时生成独特且逻辑连贯的故事情节。你的目标是创造一个引人入胜、充满未知的故事。你的回复应包含：\n1. 对场景的生动描述。\n2. 玩家的当前状况。\n3. 引导玩家思考下一步行动，可以给出几个选项（例如：A. ... B. ...），或直接鼓励玩家自由探索。\n请确保故事风格一致，并避免重复。保持回复在200-300字左右。",
+    "hint": "用于生成故事的LLM提示词模板，必须包含{game_theme}占位符"
+  },
+  "delete_cache_on_uninstall": {
+    "description": "卸载时删除缓存",
+    "type": "bool",
+    "default": false,
+    "hint": "插件卸载时是否删除所有游戏缓存文件"
+  }
+}
